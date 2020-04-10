@@ -9,7 +9,7 @@ WORKDIR /app/
 COPY app.py .
 ## Step 3:
 COPY requirements.txt .
-ADD model_data ./model_data
+COPY model_data ./model_data
 RUN pip install -r requirements.txt
 
 # Install packages from requirements.txt
